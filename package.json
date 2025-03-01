@@ -1,0 +1,43 @@
+{
+  "name": "fitbots",
+  "version": "1.0.0",
+  "description": "simple bots for minecraft servers",
+  "homepage": "https://github.com/rakazabra/FitBots",
+  "bugs": {
+    "url": "https://github.com/rakazabra/FitBots/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rakazabra/FitBots.git"
+  },
+  "license": "ISC",
+  "author": {
+    "name": "krakazabra"
+  },
+  "type": "module",
+  "main": "./lib/index.js",
+  "scripts": {
+    "start": "node main.ts",
+    "build": "tsc",
+    "lint": "tslint -c tslint.json src/**/*.ts",
+    "prepublish": "npm run build"
+  },
+  "dependencies": {
+    "input": "^1.0.1",
+    "minecraft-protocol": "^1.54.0",
+    "mineflayer": "^4.26.0",
+    "mineflayer-auto-eat": "^5.0.0",
+    "mineflayer-web-inventory": "^1.8.5",
+    "prismarine-entity": "^2.5.0",
+    "prismarine-item": "^1.16.0",
+    "readline": "^1.3.0",
+    "tsc": "^2.0.4",
+    "tslint": "^5.20.1",
+    "typescript": "^5.7.3"
+  },
+  "files": [
+    "./bin/*",
+    "./lib/*"
+  ],
+  "typings": "./lib/index.d.ts"
+}
